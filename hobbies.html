@@ -6,68 +6,113 @@
     <title>Akhmedali's Hobbies</title>
 
     <style>
-        body{
-            background-color: antiquewhite;
-            font-family: 'Times New Roman', Times, serif;
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
-        a.active{
-            background-color: rgb(208, 196, 180);
+        body{
+            background-color: #212529;
+            height: 100vh;
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            padding: 0 50px; 
+        }
+
+        .navbar h2{
+            color: #e79819;
+            font-weight: 600;
+            position: absolute;
+            top: auto;
+            left: 0;
+            margin-left: 25px;
         }
 
         .navbar ul{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
+            display: flex;
         }
 
-        .navbar a{
-            color: black;
+        .navbar ul li{
+            list-style: none;
+        }
+
+        .navbar ul li a{
             text-decoration: none;
-            padding: 15px;
-            display: block;
-            text-align: center;
-            float: left;
+            color: #fff;
+            font-size: 16px;
+            margin-right: 40px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li:hover a{
+            color: #ffb742; 
+        }
+
+        .myHobby h3{
+            color: #ff0000;
+            padding: 0 15px;
+            margin: 15px;
+            font-size: 30px;
             margin-left: 40px;
         }
 
-        .navbar a:hover{
-            background-color: rgb(171, 161, 147);
-        }
-
-        .navbar li{
-            float: left;
-        }
-
-        .myHobby{
-            margin: 20px;
-            padding: 15px;
+        .myHobby p{
+            color: #fff;
+            font-size: 20px;
+            margin: 15px;
+            padding: 0 15px;
         }
 
         .hobbies{
-            margin: 20px;
-            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
         }
 
-        h3{
-            color: darkslategray;
-            font-size: 28px;
+        .hobbies td h4{
+            color: #ffb742;
+            margin: 2.25%;
+            margin-left: 20px;
+            font-size: 25px; 
+            display: inline-block;
+            text-align: center;
         }
 
-        h4{
-            color: darkgreen;
-            font-size: 22px;
+        .hobbies td p{
+            margin-bottom: 15px;
+            font-size: 20px;
+            padding: 20px;
+            color: #fff;
+            justify-content: space-between;
+            height: 150px;
+            width: 400px;
+        }
+
+        .hobbies td img{
+            margin-left: 40px;
         }
 
         .footer{
-            margin: 20px;
-            padding-left: 20px;
+            margin: 30px;
+            margin-top: 50px;
+            font-size: 20px;
+            color: #ffb742;
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
+        <h2>Akhmedali</h2>
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="hobbies.html" class="active">Hobbies</a></li>
@@ -81,17 +126,25 @@
     </div>
 
     <div class="hobbies">
-        <h4>Formula 1</h4>
-        <p>Formula 1 is one of the best sports to watch and follow. The combination of high-speed cars, strategic decision making, and technology fascinates me. In one word I'm car lover.</p>
-        <img src="Formula 1.jpg" alt="Formula 1 cars" width="300" height="200">
+        <table>
+            <td>
+                <h4 class="hobby-name">Formula 1</h4>
+                <p class="hobby-text">Formula 1 is one of the best sports to watch and follow. The combination of high-speed cars, strategic decision making, and technology fascinates me. In one word I'm car lover.</p>
+                <img src="photos/Formula 1.jpg" alt="Formula 1 cars" width="300" height="200">
+            </td>
 
-        <h4>Football</h4>
-        <p>Football has been a passion of mine since childhood. It keeps me physically active and teaches me teamwork and strategy.</p>
-        <img src="football photo.jpg" alt="Football game" width="200" height="200">
+            <td>
+                <h4 class="hobby-name">Football</h4>
+                <p class="hobby-text">Football has been a passion of mine since childhood. It keeps me physically active and teaches me teamwork and strategy.</p>
+                <img src="photos/football photo.jpg" alt="Football game" width="200" height="200">
+            </td>
 
-        <h4>Tennis</h4>
-        <p>Tennis is another sport I enjoy both watching and playing. I love the balance between physical endurance and mental health.</p>
-        <img src="Tennis.jpg" alt="Tennis photo" width="200" height="300">
+            <td>
+                <h4 class="hobby-name">Tennis</h4>
+                <p class="hobby-text">Tennis is another sport I enjoy both watching and playing. I love the balance between physical endurance and mental health.</p>
+                <img src="photos/Tennis.jpg" alt="Tennis photo" width="200" height="200">
+            </td>
+        </table>
     </div>
 
     <div class="footer">

@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'">
     <title>Akhmedali's Webpage</title>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="contact_me.html">Contact me</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <h2>Akhmedali</h2>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact_me.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="photo-container">
-        <img src="photo_2024-09-03_23-31-36.jpg" alt="My photot" width="200" height="250" title="Akhmedali" class="photo">
-        <div class="topname">
-            <h3>Duisembaiuly Akhmedali</h3>
-            <p>Hello, my name is Akhmedali and welcome to my web page!</p>
-        </div>
-    </div>
-
-    <div class="abtme">
-        <h3>About me</h3>
-        <p>I'm a student at Astana IT University and I'm future software developer. I supposed to be a full-stack developer in the future. I have deep interest in learniing new programming languages or whatever else. The place where I was born is Kyzylorda, Kazakhstan.</p>
+    <div class="main">
+        <h4>Hello, I'm <span>Akhmedali</span>👋</h4>
+        <p class="title">Software Developer.</p>
+        <img src="photos/photo_2024-09-03_23-31-36.jpg">
+        <p class="abtme">I'm a student at Astana IT University and I'm future software developer. I supposed to be a full-stack developer in the future. I have deep interest in learniing new programming languages or whatever else. The place where I was born is Kyzylorda, Kazakhstan</p>
     </div>
 
     <div class="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>Programming Languages: Java, Python </li>
-            <li>Tools: Git, Github, Jetbrains, VSCode</li>
-            <li>Databases: PostgeSQL</li>
-        </ul>
-    </div>
-
-    <div class="referToContact">
-        <p>Interested in collaborating or learning more about my work? Feel free to <a href="contact_me.html">get in touch</a> with me!</p>
+        <div class="item">
+            <div class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAUNJREFUSEvt1MsqB2EYB+CHkFIOF2FlwVIk5RBFWdhIwkW4Byv3IEpWRNlYKIeFhWTjDuyVhSyI+TRT+szpb/FfYFbTzHzzvO/vO7Ro0tXSJMc/9OOk/2Z0S5jHGt5yshvGJhbwVJRtVXQr2E0Hb2Ar+lEXHtCbFHODySKsDAqd7PG5BY6xiNeciidwgk7cYTwPK4JWsV0DydxKLA9qFCnCAv6YvYyhnyJ52D3GMuwr1IpbDKajZnDa4A7twBlG03FhXg/CfdxRX7JyLjGAF8ylA+t4ATnCLN6xjp2i6MLzGJvGVYVUiuR1lP0vYCGCITwjxFiExcgy9uPCyvZRN84rsFpIWUdZQRnWn3Q0leR/HVXaniyew3RewinyrZOyOYq77kGAwhGTd7Ulq3MEF2XzWHXW1Vlttb75h2rFlPfR74vuA3HEQxtP2C/sAAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="info">
+                <p><span>Programming Languages:</span> Java, Python</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAnZJREFUSEu91luojmkUB/DfvnAMiXFIcpjMBSMuMEhczZTkwh2ZCKUcipBEyJCUHEpxMZlcmElxRyEUpZwuHENxgQtn5RSmZHjW7vmmr2+/3/ftve32unrfZ73P83/WWv/1X2+DdrKGdsJRDagn1mIkXuJvnPmeSxUBDcJZ/Fh28Fcswp+tBSsCuoxf8BGHMD5HFmBjcbUArC+moj9up/3HEd//b5VA3fEue6fgPI3pvY5RWIdtFUBjcBI/lK0fxSx8Kq1VAvXA2+wcgbv5+RR+S6B/pPdNZQcOxA30whc8SPUclv1R1znVgGL9YrrhBNzEdkxMhFiaN0Qar5QBLcFePMU4PMZi7MvAkaHGqIpqNDrl+xI6V6RoD5ZXrG3MUZ5IF5iWfVGv5/l5CB5VA4r1uN1OTMYHrE/pCaD/KoCm4xj+xVxcwJZ0+PwMNqC0p1bDzsOBzKLop2p2Gr8WOGficK0alXzNBeqAHViWN77Kzb6/HLw5Ed3BzzUiClcXvEHHzM4mKtIcoGjAWqkLoIVZNYJh/fC+8mJtAfQ7/kqN3AlbM3GaJKC1QFGXYNwqTMqn3srSFQxsEdAK7MrqHQ0Y1jsxcXCmfSh8yUI5gtJPqtWyKKJuOJj0bUYdAoQ7mnF1IsuRet8WAYWkhLSE3UOMjZJKREOGuj/E/TyjPtcDCX8RUChB16RRa7LWhdBey/NpJXY35+B6rAtqPssfDc03j9d/UnSzc82CAC22ooheIwodAhr6FuPiXFLpPliQZalNgDYnid9QcFKMgp+yyLYJUMhIzKHQrlLE0SMxxGLItcpqNWzQfHhi4IvSTGkVQt7Ubv913wBEHnUb6K+HbQAAAABJRU5ErkJggg=="/>
+            </div>
+            <div class="info">
+                <p><span>Tools:</span> Git, Github, Jetbrains, VSCode</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAwlJREFUSEu9llmoT1EUxn8XoQxJISRjhjJkSMZEZM48TyVjGUJEyBgl4YEHZEiGB0pRHggPhoxRSIRMZc4DMmRan9bR/m/n/NXt3911u/fus8/61vrW9619iiihVVRCOGQB1QE6AfWAp8B14D5QHWgDtAbKAWWAasAb4Bfww88dBz6ERcRANYANwB3gPFDWX1DAAUBlB64IvAdeeBLjgI/ADQecAcwDXiZgMdABy3KtAawDBgcZPQFGA2ssgZ4R3ReBpVbpMaAS8BYQ8HhgFfBQ50OgpsBQoAvQNwqm6q4A8zN6+sBoWw4c9JiicBTQB5gaA6lccX0kJdgg4ChQKo94bgLqjQC1dgJVgJEx0ELndF8U7JlTtuM/Cr3rFKqq8tbPTUADYEgMNMv5PRQFVINF2Vfgp1O7MTqzArjgSlwA9ADmAB28Xzk9UpNrWhZxRerPZWC2C0RKFL1SopYSmGvUtgJeAcOAFvb3TD+zNa6otsl1umegkpMlVT02f4z1jSXANKB+cGYMICYmuT0+mxAueQKvYyD9L3mLHkkzWaeAL+aXgb6xHZBCuwVnZIX95jnRJpp3G5W9/OfPsdhHok1UKViyTpgYSgO9fWOZmXayNzo5cxq47QYWgJLTRPnb7xhIlSjo3gBIFNxK/GB+6gcIPF6i7Zv3Webu6OykVqTRstkyaQJ0DSJJCGq4pC5hLE4Bugf0ByYC6pF6+wh4nkad9gQkT4T0jfDxoso0ZrYALSMwUSfTa8g280ki5Q3PAmrkquoOtPN5pUpFs7yiys7YyysjIHmpIVDXKrvqySrGhCwg7a/2YVjLxkpbDy4xtLfr46T7JAaa4s8rmM+aA+ec4k/5gPRMklXpeqExoKpUrX5LyslMSwoTRZqFh1P6l3nxpZ1N9ra5KNZHh9THd+avs4UE0o27Kwj43eV/zf30D1ZxvhnkfmW+J4gmegWyCBBoQYD0zSBD6mqXjDXddSVIBKElcsCKU5ECSAyqSt8WVV36cc8KAiR1dfZxpX7lfPEUirp8isx89hv1SJwbTda/HAAAAABJRU5ErkJggg=="/>
+            </div>
+            <div class="info">
+                <p><span>Databases:</span> PostgeSQL</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
